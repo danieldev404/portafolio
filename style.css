@@ -1,0 +1,128 @@
+*{
+    color: aliceblue;
+    background-color: #4B2567;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column
+}
+.container-flex{
+    display: flex;
+    justify-content: flex-end; 
+    flex-grow: 1;
+}
+.menu{
+    background-color: #714C8D;
+    display: relative;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 25%;
+    transform: translateY(-20px) translateX(-20px);
+}
+#foto {
+    margin: auto;
+    margin-top: 50px;
+    background-image:url("./img/foto.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 50px; 
+    left: 200px; 
+    transform: translateX(-50%); 
+}
+
+#links {
+    background-color: #714C8D;
+    text-align: start;
+    margin: auto; /* Alinea los elementos al centro */
+    margin-top: 350px; /* Espacio superior */
+    
+}
+
+#links ul {
+     background-color: #714C8D;
+    list-style-type: none;
+}
+
+#links ul li {
+    background-color: #714C8D;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+li:hover{
+    color:rgb(43, 154, 213);
+    cursor: pointer;
+    transition:color 0.5s;
+}
+.about{
+    display: flex;
+    align-items: flex-end;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateY(-1000px) translateX(20px);
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+
+    
+}
+.transform-about{
+    transform: rotate(90deg) translateX(-180px) translateY(100px);
+    transition: transform 0.5s;
+}
+.proyects{
+    display: flex;
+    align-items: flex-end;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateY(-1000px) translateX(20px);
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+
+    
+}
+.transform-proyects{
+    transform: rotate(90deg) translateX(-180px) translateY(100px);
+    transition: transform 0.5s;
+}
+.home{
+    display: flex;
+    align-items: flex-end;
+    background-color: blue;
+    border-radius: 50%;
+    transform: translateY(-1000px) translateX(20px);
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+
+    
+}
+.transform-home{
+    transform: rotate(90deg) translateX(-180px) translateY(100px);
+    transition: transform 0.5s;
+}
+.contact{
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(247, 238, 238);
+    border-radius: 50%;
+    transform: translateY(-1000px) translateX(20px);
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+
+    
+}
+.transform-contact{
+    transform: rotate(90deg) translateX(-180px) translateY(100px);
+    transition: transform 0.5s;
+}
