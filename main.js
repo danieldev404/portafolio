@@ -1,26 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const button1 = document.getElementById('button1');
-    const about = document.querySelector('.about');
+    const buttons = [
+        { id: 'button1', class: 'transform-about', element: document.querySelector('.about') },
+        { id: 'button2', class: 'transform-proyects', element: document.querySelector('.proyects') },
+        { id: 'button3', class: 'transform-home', element: document.querySelector('.home') },
+        { id: 'button4', class: 'transform-contact', element: document.querySelector('.contact') }
+    ];
 
-    button1.addEventListener('click', function() {
-        about.classList.toggle('transform-about');
+    buttons.forEach(button => {
+        document.getElementById(button.id).addEventListener('click', function() {
+            resetClasses();
+            button.element.classList.add(button.class);
+        });
     });
-    const button2 = document.getElementById('button2');
-    const proyects = document.querySelector('.proyects');
 
-    button2.addEventListener('click', function() {
-        proyects.classList.toggle('transform-proyects');
-    });
-    const button3 = document.getElementById('button3');
-    const home = document.querySelector('.home');
-
-    button3.addEventListener('click', function() {
-        home.classList.toggle('transform-home');
-    });
-    const button4 = document.getElementById('button4');
-    const contact = document.querySelector('.contact');
-
-    button4.addEventListener('click', function() {
-        contact.classList.toggle('transform-contact');
-    });
+    function resetClasses() {
+        buttons.forEach(button => {
+            button.element.classList.remove(button.class);
+        });
+    }
 });
